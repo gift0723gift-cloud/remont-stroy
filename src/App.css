@@ -1,0 +1,15 @@
+import React from 'react';
+import Hero from './components/Hero';
+
+function App() {
+  return (
+    <div className="min-h-screen bg-slate-900 antialiased selection:bg-amber-500 selection:text-slate-900">
+      {/* Главный экран и шапка */}
+      <Hero />
+      
+      {/* Сюда дальше по цепочке мы будем добавлять Квиз, Услуги и т.д. */}
+    </div>
+  );
+}
+
+export default App;
