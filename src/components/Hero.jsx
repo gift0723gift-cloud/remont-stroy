@@ -25,12 +25,12 @@ export default function Hero() {
           {/* Контакты в шапке */}
           <div className="flex items-center gap-6">
             <span className="text-gray-300 text-sm hidden md:block">Работаем ежедневно</span>
-            <a 
-              href="tel:+79217693892" 
-              className="text-white hover:text-amber-500 transition-colors font-medium"
-            >
-              +7 (921) 769-38-92
-            </a>
+            <a
+        href="tel:+375292530030"
+        className="text-white hover:text-amber-500 transition-colors font-medium whitespace-nowrap text-xs sm:text-base"
+      >
+        +375 (29) 253-00-30
+      </a>
             <button
             onClick={() => {
   document.getElementById('quiz-section')?.scrollIntoView({ behavior: 'smooth' });

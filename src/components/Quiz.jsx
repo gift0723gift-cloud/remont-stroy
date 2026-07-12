@@ -253,7 +253,7 @@ export default function Quiz() {
                       required
                       value={contact}
                       onChange={(e) => setContact(e.target.value)}
-                      placeholder="+7 (999) 000-00-00 или @username" 
+                      placeholder="+375 (00) 000-00-00 или @username" 
                       className="w-full bg-slate-950 border border-slate-800 rounded-xl px-5 py-4 text-white placeholder-gray-600 focus:outline-none focus:border-amber-500 font-bold"
                     />
                   </div>
