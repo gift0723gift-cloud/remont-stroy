@@ -23,21 +23,25 @@ export default function Hero() {
           <Logo />
           
           {/* Контакты в шапке */}
-          <div className="flex items-center gap-6">
-            <span className="text-gray-300 text-sm hidden md:block">Работаем ежедневно</span>
-            <a
-        href="tel:+375292530030"
-        className="text-white hover:text-amber-500 transition-colors font-medium whitespace-nowrap text-xs sm:text-base"
-      >
-        +375 (29) 253-00-30
-      </a>
-            <button
+        <div className="flex items-center gap-2 sm:gap-6">
+          <span className="text-gray-300 text-sm hidden md:block">Работаем ежедневно</span>
+          
+          <a
+            href="tel:+375292530030"
+            className="text-white hover:text-amber-500 transition-colors font-medium whitespace-nowrap text-xs sm:text-base"
+          >
+            +375 (29) 253-00-30
+          </a>
+          
+          <button
             onClick={() => {
-  document.getElementById('quiz-section')?.scrollIntoView({ behavior: 'smooth' });
-}} className="px-6 py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-900 font-semibold rounded-lg text-sm transition-all shadow-md hover:shadow-amber-500/20">
-              Вызвать замерщика
-            </button>
-          </div>
+              document.getElementById('quiz-section')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+            className="px-3 py-2 sm:px-6 sm:py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-900 font-semibold rounded-lg text-xs sm:text-sm transition-all shadow whitespace-nowrap"
+          >
+            Вызвать замерщика
+          </button>
+        </div>
         </div>
       </header>
 
