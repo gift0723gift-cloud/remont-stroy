@@ -1,6 +1,7 @@
 import React from 'react';
 import Hero from './components/Hero';
 import Quiz from './components/Quiz';
+import Portfolio from './components/Portfolio';
 import Services from './components/Services';
 import Advantages from './components/Advantages';
 import FAQ from './components/FAQ';
@@ -22,6 +23,11 @@ function App() {
       <ScrollReveal>
         <Services />
       </ScrollReveal>
+      
+      {/* НАШИ ОБЪЕКТЫ */}
+<ScrollReveal>
+  <Portfolio />
+</ScrollReveal>
 
       {/* Блок преимуществ */}
       <ScrollReveal>
