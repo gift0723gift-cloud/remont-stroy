@@ -22,13 +22,13 @@ export default function Hero() {
           {/* Логотип */}
           <Logo />
           
-          {/* Контакты в шапке */}
-        <div className="flex items-center gap-2 sm:gap-6">
+       {/* Контакты в шапке */}
+        <div className="flex flex-col items-end sm:flex-row sm:items-center gap-1 sm:gap-6">
           <span className="text-gray-300 text-sm hidden md:block">Работаем ежедневно</span>
           
           <a
             href="tel:+375292530030"
-            className="text-white hover:text-amber-500 transition-colors font-medium whitespace-nowrap text-xs sm:text-base"
+            className="text-white hover:text-amber-500 transition-colors font-medium whitespace-nowrap text-[11px] sm:text-base leading-none"
           >
             +375 (29) 253-00-30
           </a>
@@ -37,7 +37,7 @@ export default function Hero() {
             onClick={() => {
               document.getElementById('quiz-section')?.scrollIntoView({ behavior: 'smooth' });
             }}
-            className="px-3 py-2 sm:px-6 sm:py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-900 font-semibold rounded-lg text-xs sm:text-sm transition-all shadow whitespace-nowrap"
+            className="px-2.5 py-1 sm:px-6 sm:py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-900 font-semibold rounded-md sm:rounded-lg text-[10px] sm:text-sm transition-all shadow whitespace-nowrap"
           >
             Вызвать замерщика
           </button>
