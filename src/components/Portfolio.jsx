@@ -108,7 +108,7 @@ const PortfolioCard = ({ item, onOpenLightbox }) => {
       >
         {/* Размытый задний план для заполнения боковых полей */}
         <div 
-          className="absolute inset-0 bg-cover bg-center filter blur-xl opacity-20 scale-110 pointer-events-none"
+          className="absolute inset-0 bg-cover bg-center filter blur-xl opacity-60 scale-110 pointer-events-none"
           style={{ backgroundImage: `url(${activeImg})` }}
         />
 
