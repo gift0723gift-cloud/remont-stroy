@@ -1,8 +1,20 @@
 import Logo from './Logo';
 import React from 'react';
 import heroBg from '../assets/hero-bg.png';
+import React, { useState, useEffect } from 'react';
 
 export default function Hero() {
+  // Живой маркетинговый счетчик прохождений квиза
+  const [passedCount, setPassedCount] = useState(14);
+
+  useEffect(() => {
+    // Симулируем случайную активность: кто-то прошел тест раз в 45 секунд
+    const interval = setInterval(() => {
+      setPassedCount(prev => prev + 1);
+    }, 45000); 
+
+    return () => clearInterval(interval);
+  }, []);
   return (
     <section className="relative bg-slate-950 text-white min-h-screen flex flex-col">
       
@@ -69,23 +81,25 @@ export default function Hero() {
           Делаем полный цикл: от черновой отделки в новостройке до чистового ремонта. Цена фиксируется в договоре до начала работ. Сдаём объект строго по графику. Гарантия 3 года на все работы.
         </p>
 
-        {/* Кнопка действия и социальное доказательство */}
-        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
-          <button
-            onClick={() => document.getElementById('quiz-section')?.scrollIntoView({ behavior: 'smooth' })}
-            className="px-8 py-4 bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold rounded-lg shadow-lg hover:shadow-amber-500/20 transition-all text-lg"
-          >
-            Получить точную смету за 2 минуты
-          </button>
-          
-          {/* Социальное доказательство с энергичной молнией */}
-          <div className="flex items-center gap-2 text-gray-400">
-            <span className="text-amber-500 text-lg animate-pulse">⚡</span>
-            <span className="text-sm">Пройдено сегодня: <span className="text-gray-200 font-medium">14 раз</span></span>
-          </div>
+       {/* Кнопка действия и социальное доказательство */}
+      <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+        <button
+          onClick={() => document.getElementById('quiz-section')?.scrollIntoView({ behavior: 'smooth' })}
+          className="px-8 py-4 bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold rounded-lg shadow-lg hover:shadow-amber-500/20 transition-all duration-300"
+        >
+          Получить точную смету за 2 минуты
+        </button>
+
+        {/* Социальное доказательство с энергичной молнией */}
+        <div className="flex items-center gap-2 text-gray-400">
+          <span className="text-amber-500 text-lg animate-pulse">⚡</span>
+          <span className="text-sm">
+            Пройдено сегодня: <span className="text-gray-200 font-medium">{passedCount} {passedCount === 21 ? 'раз' : 'раза'}</span>
+          </span>
         </div>
-        
-      </div>
-    </section>
-  );
+      </div> {/* Закрыли контейнер кнопки и счетчика */}
+
+    </div> {/* Закрыли главный блок контента со строки 61 */}
+  </section>
+ );
 }
