@@ -17,6 +17,7 @@ export default function Footer() {
           <p className="text-gray-600 text-[11px]">
             Разработка строительных решений с гарантией качества
           </p>
+          <p className="text-gray-500 text-[11px] font-mono tracking-wide">УНП: МА7438464</p>
         </div>
 
       </div>
