@@ -1,5 +1,4 @@
 import Logo from './Logo';
-import React from 'react';
 import heroBg from '../assets/hero-bg.png';
 import React, { useState, useEffect } from 'react';
 
