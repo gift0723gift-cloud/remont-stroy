@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
 
-// Импорт медиафайлов
-import facadeCollage1 from '../assets/portfolio/facade-collage-1.jpg';
-import facadeCollage2 from '../assets/portfolio/facade-collage-2.jpg';
-import terraceCollage from '../assets/portfolio/terrace-collage.jpg';
-import basementBefore from '../assets/portfolio/basement-before.jpg';
-import basementAfter from '../assets/portfolio/basement-after.jpg';
-import toiletBefore from '../assets/portfolio/toilet-before.jpg';
-import toiletAfter from '../assets/portfolio/toilet-after.jpg';
-import showerMain from '../assets/portfolio/shower-beige-main.jpg';
-import showerDetails from '../assets/portfolio/shower-beige-details.jpg';
-import bathroomClassic from '../assets/portfolio/bathroom-classic-tub.jpg';
-import tilingFinished from '../assets/portfolio/tiling-finished.jpg';
-import tilingProcess from '../assets/portfolio/tiling-process.jpg';
-import tilingAngle3 from '../assets/portfolio/tiling-floor-angle3.jpg';
+// Импорт медиафайлов в формате WebP
+import facadeCollage1 from '../assets/portfolio/facade-collage-1.webp';
+import facadeCollage2 from '../assets/portfolio/facade-collage-2.webp';
+import terraceCollage from '../assets/portfolio/terrace-collage.webp';
+import basementBefore from '../assets/portfolio/basement-before.webp';
+import basementAfter from '../assets/portfolio/basement-after.webp';
+import toiletBefore from '../assets/portfolio/toilet-before.webp';
+import toiletAfter from '../assets/portfolio/toilet-after.webp';
+import showerMain from '../assets/portfolio/shower-beige-main.webp';
+import showerDetails from '../assets/portfolio/shower-beige-details.webp';
+import bathroomClassic from '../assets/portfolio/bathroom-classic-tub.webp';
+import tilingFinished from '../assets/portfolio/tiling-finished.webp';
+import tilingProcess from '../assets/portfolio/tiling-process.webp';
+import tilingAngle3 from '../assets/portfolio/tiling-floor-angle3.webp';
 
 const portfolioData = [
   {
