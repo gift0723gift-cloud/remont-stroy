@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 
 export default function Hero() {
   // Живой маркетинговый счетчик прохождений квиза
-  const [passedCount, setPassedCount] = useState(14);
+ const [passedCount, setPassedCount] = useState(() => Math.floor(Math.random() * (24 - 16 + 1)) + 16);
 
   useEffect(() => {
     // Симулируем случайную активность: кто-то прошел тест раз в 45 секунд

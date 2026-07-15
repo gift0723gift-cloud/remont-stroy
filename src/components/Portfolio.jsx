@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { createPortal } from 'react-dom';
 
 // Импорт медиафайлов в формате WebP
 import facadeCollage1 from '../assets/portfolio/facade-collage-1.webp';
@@ -207,24 +208,25 @@ const Portfolio = () => {
         </div>
       </div>
 
-      {/* ПОЛНОЭКРАННЫЙ ПРОСМОТР */}
-      {lightboxImg && (
-        <div 
-          className="fixed inset-0 bg-black/95 z-50 flex items-center justify-center p-4 cursor-zoom-out"
+     {/* ПОЛНОЭКРАННЫЙ ПРОСМОТР */}
+      {lightboxImg && createPortal(
+        <div
+          className="fixed inset-0 bg-black/95 z-[9999] flex items-center justify-center p-4 cursor-zoom-out"
           onClick={() => setLightboxImg(null)}
         >
-          <button 
+          <button
             className="absolute top-6 right-6 text-white text-3xl font-light hover:text-amber-500 transition-colors"
             onClick={() => setLightboxImg(null)}
           >
             ✕
           </button>
-          <img 
-            src={lightboxImg} 
-            alt="Превью" 
-            className="max-w-full max-h-[92vh] object-contain rounded-lg shadow-2xl" 
+          <img
+            src={lightboxImg}
+            alt="Превью"
+            className="max-w-full max-h-[92vh] object-contain rounded-lg shadow-2xl"
           />
-        </div>
+        </div>,
+        document.body
       )}
     </section>
   );
