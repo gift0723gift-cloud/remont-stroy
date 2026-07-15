@@ -1,5 +1,5 @@
 import Logo from './Logo';
-import heroBg from '../assets/hero-bg.png';
+import heroBg from '../assets/hero-bg.webp';
 import React, { useState, useEffect } from 'react';
 
 export default function Hero() {
